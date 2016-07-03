@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   moduleId: module.id,
@@ -8,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  boards: FirebaseListObservable<any[]>;
+  constructor(af: AngularFire) {
+    this.boards = af.database.list('boards');
+  }
 }
