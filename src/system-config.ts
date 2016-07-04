@@ -16,6 +16,10 @@ const packages: any = {
   angularfire2: {
     defaultExtension: 'js',
     main: 'angularfire2.js'
+  },
+  '@angular/router-deprecated': {
+  main: 'index.js',
+  defaultExtension: 'js'
   }
 };
 

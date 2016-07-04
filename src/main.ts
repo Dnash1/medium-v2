@@ -1,6 +1,7 @@
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
-import { AppComponent, environment } from './app/';
+import { AppComponent } from './app/';
+import { disableDeprecatedForms, provideForms } from '@angular/forms';
 import {FIREBASE_PROVIDERS, 
   defaultFirebase, 
   AngularFire, 
@@ -10,6 +11,8 @@ import {FIREBASE_PROVIDERS,
 
 
 bootstrap(AppComponent, [
+  disableDeprecatedForms(),
+  provideForms(),
   FIREBASE_PROVIDERS,
   // Initialize Firebase app  
   defaultFirebase({
@@ -17,10 +20,6 @@ bootstrap(AppComponent, [
     authDomain: "medium-1bce6.firebaseapp.com",
     databaseURL: "https://medium-1bce6.firebaseio.com",
     storageBucket: "medium-1bce6.appspot.com",
-  }),
-  firebaseAuthConfig({
-    provider: AuthProviders.Anonymous,
-    method: AuthMethods.Anonymous
   })
 ]);
 

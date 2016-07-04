@@ -1,5 +1,5 @@
 {
-  "name": "af2test",
+  "name": "medium-v2",
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
@@ -21,6 +21,7 @@
     "@angular/platform-browser": "2.0.0-rc.3",
     "@angular/platform-browser-dynamic": "2.0.0-rc.3",
     "@angular/router": "3.0.0-alpha.7",
+    "@angular/router-deprecated": "2.0.0-rc.2",
     "angularfire2": "^2.0.0-beta.2",
     "es6-shim": "0.35.1",
     "firebase": "^3.1.0",

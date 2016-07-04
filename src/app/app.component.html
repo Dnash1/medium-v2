@@ -1,8 +1,4 @@
 <h1>
   {{title}}
 </h1>
-<ul *ngFor="let board of boards | async">
-  <li class="text">
-    {{board.name}}
-  </li>
-</ul>
+<router-outlet></router-outlet>
